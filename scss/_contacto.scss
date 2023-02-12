@@ -1,0 +1,67 @@
+*/////////////////////////////////////*/
+/*contacto*/
+/*////////////////////////////////////*/
+
+
+.fieldset_color
+{
+  background-color: rgba(19, 6, 203, 0.3);
+  label{
+    color:white;
+
+   font-size: 1.5rem;
+  text-align: left;
+  background-color: $color-fondo;
+  padding-left: 1rem;
+  }
+}
+
+.altura_contacto{
+
+  height:700px;
+}
+
+.espaciado_contacto {
+  @include estilo_columnas;
+}
+.row
+{margin: 0;
+  padding: 1rem;}
+
+
+//Para pantallas mas grandes, se colocá en horizontal 
+  @media (min-width: 768px) {
+    .espaciado_contacto {
+
+      display: flex;
+  flex-direction: row;
+  align-items:center;
+    }
+  }
+
+  //EXTEND//
+.boton{
+  width: 160px;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.boton-aceptar{
+  @extend .boton;
+  background-color:green;
+  color:white;
+}
+
+.boton-cancelar{
+  @extend .boton;
+  background-color:red;
+  color:white;
+}
+
+.espacio_contacto
+{
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+}
+

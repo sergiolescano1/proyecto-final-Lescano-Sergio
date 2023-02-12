@@ -1,0 +1,386 @@
+/*Reseteo CSS*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  width: 75px;
+}
+
+/*
+#navbarNav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+*/
+#navbarNav li a {
+  text-align: end;
+  align-items: flex-end;
+  color: green;
+  transition: all 1s;
+}
+#navbarNav li a:hover {
+  background-color: #000;
+  color: red;
+  padding: 10px;
+  border-radius: 10%;
+}
+
+.parallax {
+  padding-top: 3rem;
+  gap: 2rem;
+  margin-top: 1rem;
+  background: linear-gradient(to right, rgb(9, 1, 72), rgb(0, 3, 11));
+}
+
+h1, h3, h5 {
+  text-align: center;
+  color: white;
+  padding-bottom: 1rem;
+}
+h1:hover, h3:hover, h5:hover {
+  color: gray;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+h1 {
+  padding-top: 3rem;
+  text-align: center;
+}
+
+#carouselExampleIndicators {
+  width: 300px;
+}
+
+.carousel-item img {
+  height: 225px;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  background-color: blue;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.bacn { /*bacn color negro de cards en pagina index*/
+  color: black;
+}
+.bacn p {
+  color: black;
+}
+
+.padre-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem; /*espacio entre tarjetas*/
+  /*fagdfsagwa*/
+  display: flex;
+  flex-wrap: wrap;
+}
+.padre-cards img {
+  padding-left: 5%; /* borde entre la foto y el contorno*/
+  padding-right: 5%;
+  padding-top: 5%;
+  height: 250px;
+}
+
+.card {
+  background-color: rgba(252, 246, 239, 0.89);
+  width: 16rem; /*ancho de la tarjeta*/
+  border-radius: 10%;
+}
+.card:hover {
+  transform: translateY(-15px); /*efecto mivimiento hacia arriba*/
+  box-shadow: 10px 12px 16px rgba(0, 0, 0, 0.2); /*efecto sombra*/
+}
+
+.card-body h5 {
+  padding-top: 0;
+  color: red;
+}
+.card-body h5 p {
+  text-align: center;
+}
+
+#footer {
+  background-color: black;
+}
+
+.footer_down {
+  background-color: black;
+  border-radius: 10%;
+  border-style: ridge;
+  border-color: #fff;
+  color: #C4AA25;
+}
+
+/*//////////////media query/////////
+/*Tablet*/
+@media (min-width: 768px) {
+  .padre-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+  .card {
+    background-color: rgba(252, 246, 239, 0.89);
+    width: 20rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #carouselExampleIndicators {
+    width: 500px;
+  }
+  .carousel-item img {
+    height: 350px;
+  }
+}
+/*Desktop*/
+@media (min-width: 1200px) {
+  .padre-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .card {
+    width: 20rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #carouselExampleIndicators {
+    width: 600px;
+  }
+}
+.table {
+  text-align: center;
+}
+.table img:hover {
+  transform: translateY(-15px); /*efecto mivimiento hacia arriba*/
+  box-shadow: 10px 12px 16px rgba(0, 0, 0, 0.2); /*efecto sombra*/
+}
+
+.table-hover tbody td:hover {
+  color: green;
+}
+
+.table-hover tbody th:hover {
+  color: blue;
+}
+
+.imagen_tabla {
+  display: block;
+  margin: 0 auto;
+  margin-top: 1rem;
+  width: 3rem;
+}
+
+/*Estadios
+///////////////////////////*/
+.espaciado_paginas p {
+  padding-left: 20%;
+  padding-right: 20%;
+  color: #C4AA25;
+  text-align: center;
+}
+
+.estadios_fotos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.estadios_fotos img {
+  border-radius: 3px;
+  max-width: 40%;
+  border: #C4AA25 2px solid;
+}
+.estadios_fotos img:hover {
+  border: blue 2px solid;
+}
+
+.mapa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mapa iframe {
+  max-width: 60%;
+  padding-bottom: 1rem;
+  height: 300px;
+}
+
+/*//////////////media query/////////
+/*Tablet*/
+@media (min-width: 768px) {
+  .estadios_fotos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .estadios_fotos img {
+    max-width: 40%;
+    height: auto;
+  }
+  .mapa iframe {
+    height: 500px;
+  }
+}
+/*Desktop*/
+@media (min-width: 1200px) {
+  .estadios_fotos img {
+    max-width: 45%;
+  }
+}
+/*FILTRO DE PRODUCTOS*/
+.card_video {
+  background-color: rgba(6, 24, 48, 0.89);
+  width: 20rem;
+  border-radius: 5%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.card_video iframe {
+  width: 20rem;
+  background-color: rgba(6, 24, 48, 0.89);
+  height: 11rem;
+}
+.card_video h5 {
+  padding: 1rem;
+}
+
+.container_videos {
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  justify-items: center;
+}
+
+.container-opciones {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.container-opciones label {
+  cursor: pointer;
+  padding: 1rem;
+}
+.container-opciones label:nth-of-type(odd) {
+  background-color: rgb(28, 189, 234);
+  border-radius: 10%;
+  border-color: blue;
+}
+.container-opciones label:nth-of-type(even) {
+  background-color: rgb(255, 255, 255);
+  border-radius: 5%;
+  border-color: gray;
+}
+
+#final,
+#postfinal,
+#todos {
+  display: none;
+}
+
+.card_final,
+.card_postfinal {
+  display: none;
+}
+
+#final:checked ~ .container_videos .card_final,
+#postfinal:checked ~ .container_videos .card_postfinal {
+  display: flex;
+}
+
+#todos:checked ~ .container_videos .card_final,
+#todos:checked ~ .container_videos .card_postfinal {
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .card_video {
+    width: 40rem;
+  }
+  .card_video iframe {
+    width: 40rem;
+    height: 16rem;
+  }
+}
+@media (min-width: 1080px) {
+  .card_video {
+    width: 50rem;
+  }
+  .card_video iframe {
+    width: 50rem;
+    height: 25rem;
+  }
+}
+* .fieldset_color {
+  background-color: rgba(19, 6, 203, 0.3);
+}
+* .fieldset_color label {
+  color: white;
+  font-size: 1.5rem;
+  text-align: left;
+  background-color: linear-gradient(to right, rgb(9, 1, 72), rgb(0, 3, 11));
+  padding-left: 1rem;
+}
+
+.altura_contacto {
+  height: 700px;
+}
+
+.espaciado_contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row {
+  margin: 0;
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .espaciado_contacto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+.boton, .boton-cancelar, .boton-aceptar {
+  width: 160px;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.boton-aceptar {
+  background-color: green;
+  color: white;
+}
+
+.boton-cancelar {
+  background-color: red;
+  color: white;
+}
+
+.espacio_contacto {
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+}
+
+/*# sourceMappingURL=styles.css.map */

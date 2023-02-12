@@ -1,0 +1,25 @@
+.table{
+    text-align: center; 
+
+     img:hover{
+        @include animacion;}
+  }
+  
+ 
+  
+  .table-hover tbody td:hover{
+    color:green;
+  }
+  .table-hover tbody th:hover{
+    color:blue;
+  }
+  
+
+  .imagen_tabla{
+    display: block;
+    margin: 0 auto;
+    margin-top: 1rem;
+    width: 3rem;
+  }
+
+  
