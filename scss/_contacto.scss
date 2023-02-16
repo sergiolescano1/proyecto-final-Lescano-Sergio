@@ -1,7 +1,6 @@
-*/////////////////////////////////////*/
+/*/////////////////////////////////////*/
 /*contacto*/
 /*////////////////////////////////////*/
-
 
 .fieldset_color
 {
@@ -13,12 +12,15 @@
   text-align: left;
   background-color: $color-fondo;
   padding-left: 1rem;
+  } & :hover{
+    color: green;
+
   }
 }
 
 .altura_contacto{
 
-  height:700px;
+  height: 100%;
 }
 
 .espaciado_contacto {
@@ -29,13 +31,18 @@
   padding: 1rem;}
 
 
+
+
 //Para pantallas mas grandes, se colocá en horizontal 
   @media (min-width: 768px) {
     .espaciado_contacto {
 
-      display: flex;
+  display: flex;
   flex-direction: row;
   align-items:center;
+    }
+    .altura_contacto{
+      height:700px;
     }
   }
 
@@ -51,6 +58,7 @@
   @extend .boton;
   background-color:green;
   color:white;
+  
 }
 
 .boton-cancelar{

@@ -3,13 +3,13 @@
 //CREO UN CONTENEDOR
 .card_video {
   background-color: rgba(6, 24, 48, 0.89);
-  width: 20rem;
+  width: 19rem;
 border-radius: 5%;
   display: flex;
   flex-wrap:wrap;
   
   iframe{
-    width: 20rem;
+    width: 19rem;
     background-color: rgba(6, 24, 48, 0.89);
     height: 11rem;
 
@@ -27,7 +27,10 @@ border-radius: 5%;
   gap: 2rem;
   justify-items: center;
 }
+
+
 //menu de opciones: final - postfinal -todo 
+
 .container-opciones {
   display: flex;
   justify-content: center;
@@ -35,6 +38,11 @@ border-radius: 5%;
   label {
     cursor: pointer;
     padding: 1rem;
+    @include texto-titulos;
+    color:black; 
+    &:active { color: blue; }
+    &:hover{ @include animacion;}
+    
   }
   label:nth-of-type(odd) {
     background-color: rgb(28, 189, 234);
@@ -48,7 +56,8 @@ border-radius: 5%;
   }
 }
 
-//aplico filtro, desapareciendo menu
+
+//aplico filtro, desaparecs menu
 #final,
 #postfinal,
 #todos {

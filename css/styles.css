@@ -18,13 +18,6 @@ img {
   width: 75px;
 }
 
-/*
-#navbarNav{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-*/
 #navbarNav li a {
   text-align: end;
   align-items: flex-end;
@@ -247,13 +240,13 @@ h1 {
 /*FILTRO DE PRODUCTOS*/
 .card_video {
   background-color: rgba(6, 24, 48, 0.89);
-  width: 20rem;
+  width: 19rem;
   border-radius: 5%;
   display: flex;
   flex-wrap: wrap;
 }
 .card_video iframe {
-  width: 20rem;
+  width: 19rem;
   background-color: rgba(6, 24, 48, 0.89);
   height: 11rem;
 }
@@ -277,6 +270,22 @@ h1 {
 .container-opciones label {
   cursor: pointer;
   padding: 1rem;
+  text-align: center;
+  color: white;
+  padding-bottom: 1rem;
+  color: black;
+}
+.container-opciones label:hover {
+  color: gray;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.container-opciones label:active {
+  color: blue;
+}
+.container-opciones label:hover {
+  transform: translateY(-15px); /*efecto mivimiento hacia arriba*/
+  box-shadow: 10px 12px 16px rgba(0, 0, 0, 0.2); /*efecto sombra*/
 }
 .container-opciones label:nth-of-type(odd) {
   background-color: rgb(28, 189, 234);
@@ -328,19 +337,25 @@ h1 {
     height: 25rem;
   }
 }
-* .fieldset_color {
+/*/////////////////////////////////////*/
+/*contacto*/
+/*////////////////////////////////////*/
+.fieldset_color {
   background-color: rgba(19, 6, 203, 0.3);
 }
-* .fieldset_color label {
+.fieldset_color label {
   color: white;
   font-size: 1.5rem;
   text-align: left;
   background-color: linear-gradient(to right, rgb(9, 1, 72), rgb(0, 3, 11));
   padding-left: 1rem;
 }
+.fieldset_color :hover {
+  color: green;
+}
 
 .altura_contacto {
-  height: 700px;
+  height: 100%;
 }
 
 .espaciado_contacto {
@@ -359,6 +374,9 @@ h1 {
     display: flex;
     flex-direction: row;
     align-items: center;
+  }
+  .altura_contacto {
+    height: 700px;
   }
 }
 .boton, .boton-cancelar, .boton-aceptar {

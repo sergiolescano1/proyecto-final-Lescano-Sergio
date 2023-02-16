@@ -17,14 +17,6 @@ img {
     margin: 0 auto;
     width: 75px;
 }
-/*
-#navbarNav{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-*/
-
 
 #navbarNav li a {
     text-align: end;
@@ -95,7 +87,7 @@ h1{
     
     }
 
-    .card {
+    .card { 
         background-color: rgba(252, 246, 239, 0.89);
         width: 16rem; /*ancho de la tarjeta*/
         border-radius: 10%;
